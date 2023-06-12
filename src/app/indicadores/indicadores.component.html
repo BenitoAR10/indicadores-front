@@ -1,0 +1,20 @@
+<h2>Indicadores</h2>
+
+<button (click)="getIndicadores()">Obtener Indicadores</button>
+
+<table>
+  <thead>
+  <tr>
+    <th>Descripción</th>
+    <th>Riesgo</th>
+    <th>Valor</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let indicador of indicadores">
+    <td>{{ indicador.descripcion }}</td>
+    <td>{{ indicador.riesgo }}</td>
+    <td>{{ indicador.valor }}</td>
+  </tr>
+  </tbody>
+</table>
